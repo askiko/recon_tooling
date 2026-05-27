@@ -139,7 +139,7 @@ The project is distributed as a portable Docker container to ensure:
 
 <p align="center">
 On Windows server, launch server manager and select Add roles and features: <br/>
-<img src="https://raw.githubusercontent.com/askiko/my_files/" height="80%" width="80%" alt="Enumeration output"/>
+<img src="https://raw.githubusercontent.com/askiko/recon_tooling/main/screenshots/" height="80%" width="80%" alt="Enumeration output"/>
 <br />
 <br />
 
