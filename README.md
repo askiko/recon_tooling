@@ -138,10 +138,12 @@ The project is distributed as a portable Docker container to ensure:
 ### Terminal Workflow
 
 <p align="center">
-On Windows server, launch server manager and select Add roles and features: <br/>
-<img src="https://raw.githubusercontent.com/askiko/recon_tooling/main/screenshots/" height="80%" width="80%" alt="Enumeration output"/>
+Enter your target domain to the prompt: <br/>
+<img src="https://raw.githubusercontent.com/askiko/recon_tooling/main/screenShots/enterDomain.png" height="80%" width="80%" alt="Enumeration output"/>
 <br />
 <br />
+Wait for enumeration and probing: <br/>
+<img src="https://raw.githubusercontent.com/askiko/recon_tooling/main/screenShots/probingHosts.png" height="80%" width="80%" alt="Enumeration output"/>
 
 </p>
 
