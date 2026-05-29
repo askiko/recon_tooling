@@ -1,4 +1,4 @@
-# Recon Automation Tool
+# Hunterskiko
 
 Containerized reconnaissance automation framework for attack surface discovery, scope-aware filtering, and live-host validation.
 
@@ -67,7 +67,7 @@ The application is written in Python and distributed as a Docker container for p
 ### Pull the Docker Image
 
 ```bash
-docker pull askiko/askikohunter:v2
+docker pull askiko/hunterskiko:v2.1
 ```
 ---
 
@@ -77,7 +77,7 @@ Create a file named banned.txt with a list of out of scope subdomains.<br/>
 Run the command below and then type target domain to the prompt.
 
 ```bash
-docker run --rm -it --network host -v "${PWD}:/app" askiko/askikohunter:v2
+docker run --rm -it --network host -v "${PWD}:/app" askiko/hunterskiko:v2.1
 ```
 After it finishes, a file named live_hosts.txt will be created with a list of reachable subdomains
 
@@ -99,7 +99,7 @@ After it finishes, a file named live_hosts.txt will be created with a list of re
 The reconnaissance workflow follows these stages:
 
 1. Enumerate subdomains from configured sources
-2. Use RegEx to validate scope definitions
+2. Validate scope definitions
 3. Filter out out-of-scope assets
 4. Probe HTTP/HTTPS services
 5. Extract responsive hosts
@@ -139,11 +139,11 @@ The project is distributed as a portable Docker container to ensure:
 
 <p align="center">
 Enter your target domain to the prompt: <br/>
-<img src="https://raw.githubusercontent.com/askiko/recon_tooling/main/screenShots/enterDomain.png" height="80%" width="80%" alt="Enumeration output"/>
+<img src="https://raw.githubusercontent.com/askiko/recon_tooling/main/screenshots/domain_prompt.png" height="80%" width="80%" alt="Enumeration starting"/>
 <br />
 <br />
 Wait for enumeration and probing: <br/>
-<img src="https://raw.githubusercontent.com/askiko/recon_tooling/main/screenShots/probingHosts.png" height="80%" width="80%" alt="Enumeration output"/>
+<img src="https://raw.githubusercontent.com/askiko/recon_tooling/main/screenshots/sample_output.png" height="80%" width="80%" alt="Enumeration output"/>
 
 </p>
 
@@ -159,7 +159,7 @@ Users are responsible for complying with all applicable laws and obtaining prope
 
 ## Author
 
-Asbel Kosgei
+Asbel Kosgei 
 
 ---
 
